@@ -1,7 +1,8 @@
 import "./App.css";
 import NavBar from "./components/navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Register } from "./components/Register";
+import Footer from "./components/footer/footer";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,8 @@ function App() {
         <Route path="/nosotros" element={"/"} />
         <Route path="*" element={"/"} />
       </Routes>
+      <Register/>
+      <Footer/>
     </BrowserRouter>
   );
 }
