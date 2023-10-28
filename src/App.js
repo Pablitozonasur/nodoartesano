@@ -1,4 +1,5 @@
 import "./App.css";
+import Slider from "./components/slider/slider";
 import NavBar from "./components/navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Register } from "./components/Register";
@@ -78,9 +79,13 @@ function App() {
         <Route path="/nosotros" element={"/"} />
         <Route path="*" element={"/"} />
       </Routes>
+      <Slider>
+        
+      </Slider>
       <Register/>
       <Footer/>
     </BrowserRouter>
+
   );
 }
 
